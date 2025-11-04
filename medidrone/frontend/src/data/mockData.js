@@ -1,0 +1,133 @@
+export const MOCK_DRONES = [
+  {
+    id: 1,
+    name: "MD-001",
+    model: "DJI M300",
+    battery: 85,
+    status: "active",
+    capacity: "5kg",
+    lastMaintenance: "2025-10-15",
+  },
+  {
+    id: 2,
+    name: "MD-002",
+    model: "Matrice 600",
+    battery: 92,
+    status: "active",
+    capacity: "6kg",
+    lastMaintenance: "2025-10-20",
+  },
+  {
+    id: 3,
+    name: "MD-003",
+    model: "DJI M300",
+    battery: 45,
+    status: "charging",
+    capacity: "5kg",
+    lastMaintenance: "2025-10-25",
+  },
+  {
+    id: 4,
+    name: "MD-004",
+    model: "Inspire 2",
+    battery: 78,
+    status: "in-flight",
+    capacity: "4kg",
+    lastMaintenance: "2025-10-18",
+  },
+];
+
+export const MOCK_DELIVERIES = [
+  {
+    id: 1,
+    from: "City Hospital",
+    to: "Emergency Center North",
+    type: "Blood Sample",
+    weight: "0.5kg",
+    priority: "high",
+    status: "in-flight",
+    drone: "MD-004",
+    eta: "12 min",
+    progress: 65,
+  },
+  {
+    id: 2,
+    from: "Medical Lab A",
+    to: "City Hospital",
+    type: "Medicine",
+    weight: "1.2kg",
+    priority: "medium",
+    status: "dispatched",
+    drone: "MD-001",
+    eta: "25 min",
+    progress: 30,
+  },
+  {
+    id: 3,
+    from: "Blood Bank",
+    to: "Trauma Center",
+    type: "Blood Units",
+    weight: "2.5kg",
+    priority: "critical",
+    status: "requested",
+    drone: null,
+    eta: "-",
+    progress: 0,
+  },
+  {
+    id: 4,
+    from: "Pharmacy Hub",
+    to: "Rural Clinic",
+    type: "Emergency Kit",
+    weight: "3.0kg",
+    priority: "medium",
+    status: "delivered",
+    drone: "MD-002",
+    eta: "-",
+    progress: 100,
+  },
+];
+
+export const MOCK_NOTIFICATIONS = [
+  {
+    id: 1,
+    message: "Delivery #1247 completed successfully",
+    time: "2 min ago",
+    type: "success",
+  },
+  {
+    id: 2,
+    message: "New delivery request from City Hospital",
+    time: "5 min ago",
+    type: "info",
+  },
+];
+
+
+
+export const MOCK_HOSPITAL_DELIVERIES = [
+  {
+    id: 1,      
+    from: "City Hospital",
+    to: "Emergency Center North",
+    type: "Blood Sample",
+    weight: "0.5kg",
+    priority: "high",
+    status: "in-flight",
+    drone: "MD-004",
+    eta: "12 min",
+    progress: 65,
+    },
+    {
+    id: 2,
+    from: "City Hospital",
+    to: "Rural Clinic",
+    type: "Medicine",
+    weight: "1.0kg",
+    priority: "medium",
+    status: "dispatched",
+    drone: "MD-001",
+    eta: "20 min",
+    progress: 40,
+    },
+]
